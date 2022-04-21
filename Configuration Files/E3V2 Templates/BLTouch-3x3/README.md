@@ -1,8 +1,13 @@
 ## Cura Settings
 
+* Retraction distance: 7.5mm
+* Retraction speed: 50mm/s
+
+### G-Code
+
 Found on [www.3dprintbeast.com](https://www.3dprintbeast.com/bltouch-gcode-start-and-end/) and adapted.
 
-### Start G-Code
+#### Start G-Code
 
 ```gcode
 M140 S{material_bed_temperature_layer_0} ; Start heating the heated bed
@@ -26,7 +31,7 @@ G1 Z2.0 F3000 ; Move Z-Axis up to avoid scratching of the build plate
 G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish
 ```
 
-### Stop G-Code
+#### Stop G-Code
 
 ```gcode
 M400 ; Finish Moves
